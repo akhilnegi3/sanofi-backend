@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "module_types",
+  "info": {
+    "singularName": "module-type",
+    "pluralName": "module-types",
+    "displayName": "Module-item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "module": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::module.module",
+      "inversedBy": "module_items"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Newsletters",
+        "Podcasts",
+        "Brochures",
+        "Roundtables",
+        "Videos"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "getimages",
+  "info": {
+    "singularName": "getimage",
+    "pluralName": "getimages",
+    "displayName": "getimage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

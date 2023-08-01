@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "getmsls",
+  "info": {
+    "singularName": "getmsl",
+    "pluralName": "getmsls",
+    "displayName": "getmsl",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ZIP_CODE": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "ZIP_CODE_CITY": {
+      "type": "string"
+    },
+    "ZIP_CODE_STATE": {
+      "type": "string"
+    },
+    "MSL": {
+      "type": "string"
+    },
+    "MSL_Email": {
+      "type": "email"
+    },
+    "RD_Name": {
+      "type": "string"
+    },
+    "RD_Email": {
+      "type": "email"
+    },
+    "RDT_ID": {
+      "type": "string"
+    },
+    "TERR_DESC": {
+      "type": "string"
+    },
+    "DISTRICT_RDT_ID": {
+      "type": "string"
+    },
+    "DISTRICT_DESC": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "ZIP_CODE"
+    },
+    "PROFILE_IMG": {
+      "type": "text",
+      "default": "https://snofi-media-upload.s3.amazonaws.com/Kristi_Chase_Headshot_945b8dda02.jpg"
+    }
+  }
+}
